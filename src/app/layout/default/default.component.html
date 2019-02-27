@@ -1,0 +1,24 @@
+<nz-layout class="layout">
+    <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzWidth]="width" [nzReverseArrow]="isReverseArrow">
+        <div class="logo">
+            <div class="logo-text" *ngIf="!isCollapsed">
+                <h3>Bugs</h3>
+            </div>
+        </div>
+        <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
+            <li nz-menu-item><span><i nz-icon type="user"></i><span class="nav-text">nav 1</span></span></li>
+            <li nz-menu-item><span><i nz-icon type="video-camera"></i><span class="nav-text">nav 2</span></span></li>
+            <li nz-menu-item><span><i nz-icon type="upload"></i><span class="nav-text">nav 3</span></span></li>
+            <li nz-menu-item><span><i nz-icon type="user"></i><span class="nav-text">nav 4</span></span></li>
+        </ul>
+    </nz-sider>
+    <nz-layout>
+        <nz-header style="background: #fff; padding:0;">
+        </nz-header>
+        <nz-content>
+            <nz-footer style="text-align: center;">
+                bug bug bug
+            </nz-footer>
+        </nz-content>
+    </nz-layout>
+</nz-layout>
